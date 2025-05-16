@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  background-color: #f3f3f3;
+  font-family: 'Inter', sans-serif;
+}
+
+.active {
+  font-weight: bold;
+  background-color: #ffffff33;
+  color: orange;
+  border-radius: 5px;
+}
+
+.inactive {
+  color: #f3f3f3;
+}
+
+.navbar {
+  background: #2f0047;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-list a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+.nav-list a:hover {
+  color: cornflowerblue;
+  background-color: rgba(169, 169, 169, 0.361);
+}
+
+.nav-list a:active {
+  color: rgb(72, 3, 231);
+}
+
+.nav-list a:last-child {
+  margin-right: 0;
+}
+
+.info {
+  margin-top: 50px;
+  display: flex;
+}
+
+.bio {
+  max-width: 750px;
+  margin: 0 20px;
+}
+
+.bio h1 {
+  text-align: center;
+}
+
+.my-photo {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+  border: 5px solid white;
+  margin: 20px;
+}
+
+.text {
+  font-size: larger;
+}
+
+.social a {
+  width: 150px;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+}
+
+.social a:first-child {
+  text-decoration: none;
+  background-color: #fd059691;
+}
+
+.social a:last-child {
+  text-decoration: none;
+  background-color: rgb(83, 83, 255);
+  margin-right: 0;
+}
+
+.contact-item {
+  background-color: beige;
+  max-width: 650px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid grey;
+}
+
+.contact-item {
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.contact-item p {
+  color: grey;
+  opacity: 0.8;
+  margin-top: 0;
+}
+
+.form-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 5px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group button {
+  background-color: rgba(34, 65, 224, 0.764);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: medium;
+  transition: all 0.2s ease;
+}
+
+.form-group button:hover {
+  background-color: orange;
+}
+
+.form-group button:active {
+  color: rgb(140, 142, 19);
+}
+
+.col {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  width: 300px;
+  margin-right: 25px;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#places {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 50px;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.card-container a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.container h2 {
+  text-align: center;
+  margin-top: 10px 0;
+}
+
+.card-title {
+  font-size: larger;
+  color: black;
+}
+
+.card-text {
+  opacity: 0.7;
+  color: black;
+}
+
+.hobbies-list {
+  background-color: #b95ee7;
+  color: #f3f3f3;
+}
+
+.hobbies-list li {
+  font-size: large;
+  padding: 10px 0;
+}
+
+@media (max-width: 830px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my-photo {
+    margin: 20px auto;
+  }
+
+  .bio {
+    margin: 0 20px;
+    max-width: 90%;
+  }
+}
